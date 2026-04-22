@@ -12,5 +12,5 @@ class ContaCorrente(Conta):
             self.historico.adicionar_operacao(f"Saque Conta Corrente: R$ {valor:.2f}")
             print(f"Saque de R$ {valor:.2f} realizado.")
             return True
-        print("Saque negado: Saldo e limite insuficientes.") [cite: 57, 59]
+        print("Saque negado: Saldo e limite insuficientes.")
         return False
