@@ -60,7 +60,7 @@ def main():
             num = input("Número da conta: ")
             conta = meu_banco.buscar_conta(num)
             if conta:
-                print(f"Saldo atual: R$ {conta.get_saldo():.2f}") [cite: 21]
+                print(f"Saldo atual: R$ {conta.get_saldo():.2f}") 
             else:
                 print("Conta não encontrada.")
 
