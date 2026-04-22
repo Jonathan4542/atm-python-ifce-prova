@@ -5,12 +5,12 @@ from contas.conta_poupanca import ContaPoupanca
 
 def exibir_menu():
     print("\n--- Sistema de Caixa Eletrônico ---")
-    print("1 - Criar Conta") [cite: 62]
-    print("2 - Depositar") [cite: 63]
-    print("3 - Sacar") [cite: 64]
-    print("4 - Consultar Saldo") [cite: 65]
-    print("5 - Histórico") [cite: 66]
-    print("0 - Sair") [cite: 67]
+    print("1 - Criar Conta") 
+    print("2 - Depositar") 
+    print("3 - Sacar") 
+    print("4 - Consultar Saldo") 
+    print("5 - Histórico") 
+    print("0 - Sair") 
     return input("Escolha uma opção: ")
 
 def main():
@@ -43,7 +43,7 @@ def main():
             conta = meu_banco.buscar_conta(num)
             if conta:
                 valor = float(input("Valor do depósito: R$ "))
-                conta.depositar(valor) [cite: 19]
+                conta.depositar(valor) 
             else:
                 print("Conta não encontrada.")
 
@@ -52,7 +52,7 @@ def main():
             conta = meu_banco.buscar_conta(num)
             if conta:
                 valor = float(input("Valor do saque: R$ "))
-                conta.sacar(valor) [cite: 20]
+                conta.sacar(valor) 
             else:
                 print("Conta não encontrada.")
 
@@ -69,7 +69,7 @@ def main():
             conta = meu_banco.buscar_conta(num)
             if conta:
                 print(f"\n--- Histórico da Conta {conta.get_numero()} ---")
-                conta.historico.listar() [cite: 22]
+                conta.historico.listar() 
             else:
                 print("Conta não encontrada.")
 
