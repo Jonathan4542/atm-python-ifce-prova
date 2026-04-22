@@ -19,7 +19,7 @@ class Conta:
         if valor > 0:
             self._saldo += valor
             self.historico.adicionar_operacao(f"Depósito aprovado: R$ {valor:.2f}") # Registro no histórico [cite: 58]
-            print(f"Depósito de R$ {valor:.2f} realizado com sucesso!") [cite: 59]
+            print(f"Depósito de R$ {valor:.2f} realizado com sucesso!") 
             return True
         print("Valor de depósito inválido.")
         return False
