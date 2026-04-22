@@ -8,5 +8,5 @@ class ContaPoupanca(Conta):
             self.historico.adicionar_operacao(f"Saque Poupança: R$ {valor:.2f}")
             print(f"Saque de R$ {valor:.2f} realizado com sucesso.")
             return True
-        print("Saque negado: Saldo insuficiente na poupança.") [cite: 57, 59]
+        print("Saque negado: Saldo insuficiente na poupança.") 
         return False
